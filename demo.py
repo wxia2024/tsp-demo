@@ -25,3 +25,17 @@ permutation_open, distance_open = solve_tsp_dynamic_programming(distance_matrix)
 
 print(f'Permutation DP Open: {permutation_open}\n')
 print(f'Distance DP Open: {distance_open}\n')
+
+
+# A more intricate example
+
+from python_tsp.distances import tsplib_distance_matrix
+from python_tsp.heuristics import solve_tsp_local_search, solve_tsp_simulated_annealing
+
+# Get corresponding distance matrix
+tsplib_file = "tests/tsplib_data/a280.tsp"
+distance_matrix = tsplib_distance_matrix(tsplib_file)
+
+# Solve with Local Search using default parameters
+permutation, distance = solve_tsp_local_search(distance_matrix)
+# distance: 3064
