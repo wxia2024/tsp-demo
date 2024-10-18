@@ -1,1 +1,1 @@
-print('new strin22g')
+print('this is better')
