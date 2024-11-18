@@ -32,9 +32,10 @@ from python_tsp.heuristics import solve_tsp_local_search
 #### Use large matrix ####
 
 # Define the size of the matrix
-size = 1000
+size = 400
 # Create a random matrix
-A = np.random.rand(size, size)
+#A = np.random.rand(size, size)
+A = np.random.randint(size, size)
 # Make the matrix symmetric by setting A[i, j] = A[j, i]
 A = (A + A.T) / 2
 np.fill_diagonal(A, 0)
