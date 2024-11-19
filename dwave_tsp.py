@@ -32,7 +32,7 @@ from python_tsp.heuristics import solve_tsp_local_search
 #### Use large matrix ####
 
 # Define the size of the matrix
-size = 400
+size = 100
 # Create a random matrix
 #A = np.random.rand(size, size)
 A = np.random.randint(size, size)
